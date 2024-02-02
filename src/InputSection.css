@@ -63,13 +63,30 @@
       width: 100%;
     }
     .input_search input{
-      font-size: 13px;
+      font-size: 15px;
       margin-top: 5px;
       margin-bottom: 5px;
+      width: 180px;
+    }
+    .btn{
+      margin: auto;
     }
     .input_section{
       display: flex;
-      flex-direction: column;
       align-items: self-start;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .input_search input{
+      width: 160px;
+    }
+    .btn{
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .input_search input{
+      width: 145px;
     }
   }
