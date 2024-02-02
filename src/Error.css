@@ -30,3 +30,18 @@
     color: white;
     padding: 30px;
 }
+
+@media screen and (max-width: 550px) {
+    .err_section h2{
+        font-size: 0.9rem;
+    }
+    .err_section h3{
+        font-size: 0.8rem;
+    }
+    .err_section{
+        padding: 10px;
+    }
+    .err_container{
+        width: 90%;
+    }
+}
