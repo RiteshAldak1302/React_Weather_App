@@ -1,0 +1,101 @@
+.current_temp_description{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+     flex-wrap: wrap;
+     margin-left: 15px;
+     border-radius: 0.4rem;
+     padding: 20px;
+  }
+  
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-main2);
+    padding: 1rem;
+    border-radius: 0.4rem; 
+  }
+  .description_card_icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  .description_card_icon small{
+    text-transform: capitalize;
+  }
+  
+  @media screen and (max-width : 1000px) {
+       .current_temp_description{
+         grid-template-columns: 1fr 1fr; /* no of col for card will be 2 when width would be less than 900px    */
+       }
+  }
+  @media screen and (max-width : 870px) {
+    .current_temp_description{
+      grid-template-columns: 1fr 1fr 1fr; /* no of col for card will be 2 when width would be less than 900px    */
+      width: 80%;
+    }
+    .current_temp_description{
+      align-items: center;
+      width: 95%;
+      margin: auto;
+      gap: 0.5rem;
+     flex-wrap: wrap;
+     align-items: center;
+     margin-left: 10px;
+     border-radius: 0.4rem;
+     padding: 10px;
+    }
+  }
+  @media screen and (max-width : 660px) {
+    .current_temp_description{
+      grid-template-columns: 1fr 1fr; /* no of col for card will be 2 when width would be less than 900px    */
+      width: 90%;
+      margin: auto;
+      gap: 0.5rem;
+     flex-wrap: wrap;
+     align-items: center;
+     margin-left: 23px;
+     border-radius: 0.4rem;
+     padding: 10px;
+    }
+    .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--section-main2);
+      padding: 1rem;
+      border-radius: 0.4rem; 
+    }
+  }
+  @media screen and (max-width: 400px) {
+         .current_temp_description{
+          grid-template-columns: 1fr; 
+          align-items: center;
+          margin: auto;
+          width: 100%;
+         }
+         
+        .card{
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+        }
+        .current_temp_description h4{
+          flex-direction: row;
+        }
+        .description_card_icon{
+          width: 50%;
+        }
+        .current_temp_description h4{
+          font-size: 0.8rem;
+        }
+        
+  }

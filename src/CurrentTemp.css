@@ -1,0 +1,91 @@
+.current_temp{
+  width: 40%;
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+  margin-left: 20px;
+  background-color: var(--section-main2);
+  border-radius: 0.4rem;
+  padding: 20px;
+}
+
+.date{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 70%;
+}
+
+.current_temp h3{
+ font-size: 1.3rem;
+ text-transform: capitalize;
+}
+.current_temp h4{
+font-size: 0.8rem;
+text-transform: capitalize;
+}
+.temp_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.current_weather_cond{
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+}
+.current_weather_temp{
+ display: flex;
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+.current_weather_temp h1{
+ font-size: 3rem;
+}
+
+@media screen and (max-width : 870px) {
+.temp_section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+}
+.current_temp{
+  width: 95%;
+  margin: auto;
+}
+.current_temp h3{
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.temp_info{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: end;
+  justify-content: space-evenly;
+}
+.current_weather_cond{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.date{
+justify-content: space-evenly;
+width: 50%;
+}
+.current_weather_temp h1{
+font-size: 2rem;
+}
+}
+
+@media screen and (max-width : 660px) {
+.current_weather_temp h1{
+  font-size: 1.2rem;
+}
+.current_temp h3{
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+}

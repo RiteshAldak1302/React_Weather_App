@@ -1,0 +1,90 @@
+:root{
+  /* making variable to use it in the styling */
+  --section-main: rgba(0,0,0,0.3);
+  --section-main2: rgba(0,0,0,0.5);
+  --section-main3: rgba(0,0,0,0.7);
+  --background-main: rgba(0,0,0,0.2);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app{
+  width: 100%;
+  height: max-content;
+  background-position: center;
+  background-size: cover;
+}
+.main{
+   width: 100%;
+   height: 100%;
+   background-color: var(--background-main);
+}
+.container{
+   max-width: 68%;  
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+   /* background-color: var(--section-main); */
+}
+.section{
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  color: white;
+  margin-top: 70px;    
+}
+
+.temp_section{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 0.4rem;
+  margin-top: 30px;        
+  padding: 20px;
+  background-color: var(--section-main);
+  color: white;
+}
+
+/* current temp description */
+
+@media screen and (max-width : 870px) {
+  .temp_section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+  }
+  .app{
+    width: 100%;
+    height: max-content;
+    background-position: center;
+    background-size: cover;
+  }
+  .main{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 660px) {
+       .container{
+        max-width: 93%;
+       }
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+    max-width: 95%;
+   }
+  .temp_section{
+    width: 100%;
+  }
+}
