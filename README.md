@@ -4,6 +4,10 @@
 ## Overview
 This GitHub repository houses a Weather App developed with React Vite and the OpenWeather API. Providing real-time weather information, the application offers a sleek and responsive interface for users to stay updated on current weather conditions.
 
+## Demo
+You can see my application by clicking on this link
+[weather app](https://65bd541199ee7900887e9940--preeminent-puppy-3b7f63.netlify.app/)
+
 ## Features
 - **Real-time Weather Data:** Fetches and displays up-to-date weather information through the OpenWeather API.
 - **React Vite:** Utilizes React Vite for fast and efficient development and production builds.
