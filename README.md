@@ -47,5 +47,12 @@ To use the OpenWeather API, obtain an API key from [OpenWeather](https://openwea
 
 And Because we are using vite, for this we need to write the varible name like "VITE_API_KEY" and also access it by using "import.meta.env.VITE_API_KEY".
 
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
 
 
